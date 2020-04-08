@@ -15,55 +15,64 @@
 
 <body>
 
-<div class="header">
-  <div class="header__logo">
-    <img src="img/site_logo.png" alt="Federico Giurdanella">
+  <!-- Main Header -->
+  <div class="header">
+    <a href="#" class="header__logo">
+      <img src="img/site_logo.svg" alt="Federico Giurdanella">
+    </a>
+    <div class="header__menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About Me</a></li>
+      </ul>
+    </div>
+    <div class="header__cta">
+      <a href="#">Federico Giurdanella</a>
+    </div>
+    <div class="header__hamburger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
   </div>
-  <div class="header__menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">About Me</a></li>
-    </ul>
-  </div>
-  <div class="header__cta">
-    <a href="#">Contattami</a>
-  </div>
-</div>
 
+<!-- Main Hero -->
 <div class="hero">
   <h5>12 Marzo 2020</h5>
   <h1>Benvenuto nel primo sito di Federico Giurdanella</h1>
   <h3>Ciao a tutti i luonghi e i curti, via amo tremila</h3>
 </div>
 
-<h2 class="myskills">Le mie competenze</h2>
+<!-- Skills cards -->
+  <h2 class="myskills">Le mie competenze</h2>
 
-<div class="grid">
+  <div class="grid">
 
-  <div class="grid__skill">
-    <img src="img/image.jpg" alt="Fotografia">
-    <h3>Fotografia</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.</p>
+    <div class="grid__skill">
+      <img src="img/image.jpg" alt="Fotografia">
+      <h3>Fotografia</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.</p>
+    </div>
+
+    <div class="grid__skill">
+      <img src="img/image.jpg" alt="Fotografia">
+      <h3>Fotografia</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.</p>
+    </div>
+
+    <div class="grid__skill">
+      <img src="img/image.jpg" alt="Fotografia">
+      <h3>Fotografia</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.</p>
+    </div>
+
   </div>
 
-  <div class="grid__skill">
-    <img src="img/image.jpg" alt="Fotografia">
-    <h3>Fotografia</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.</p>
-  </div>
-
-  <div class="grid__skill">
-    <img src="img/image.jpg" alt="Fotografia">
-    <h3>Fotografia</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.</p>
-  </div>
-
-</div>
 
 
 
@@ -73,9 +82,26 @@
 
 
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/ac3472581c.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<!-- Font Awesome -->
+<!-- <script src="https://kit.fontawesome.com/ac3472581c.js" crossorigin="anonymous"></script> -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script type="text/javascript">
+
+  /* Open Panel */
+  $(".header__hamburger").on('click', function() {
+    $(".header__menu").toggleClass("header__menu--open");
+  });
+
+  /* Change Icon*/
+  $(document).ready(function(){
+  $(".header__hamburger").click(function(){
+    $(this).toggleClass("header__hamburger--active");
+  });
+});
+
+</script>
 
 </body>
 
