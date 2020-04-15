@@ -25,11 +25,13 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About Me</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </div>
     <div class="header__cta">
-      <a href="#">Federico Giurdanella</a>
+      <a href="#">Call to action</a>
     </div>
     <div class="header__hamburger">
       <span class="line"></span>
@@ -38,14 +40,14 @@
     </div>
   </div>
 
-<!-- Main Hero -->
-<div class="hero">
-  <h5>12 Marzo 2020</h5>
-  <h1>Benvenuto nel primo sito di Federico Giurdanella</h1>
-  <h3>Ciao a tutti i luonghi e i curti, via amo tremila</h3>
-</div>
+  <!-- Main Hero -->
+  <div class="hero">
+    <h5 id="myGreet"></h5>
+    <h1>Benvenuto nel primo sito di Federico Giurdanella</h1>
+    <h3>Ciao a tutti i luonghi e i curti, via amo tremila</h3>
+  </div>
 
-<!-- Skills cards -->
+  <!-- Skills cards -->
   <h2 class="myskills">Le mie competenze</h2>
 
   <div class="grid">
@@ -70,6 +72,27 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam rem qui ipsa.</p>
     </div>
+  </div>
+
+  <!-- My works cards -->
+
+  <div class="grid_2">
+
+    <div class="grid__works">
+      <h3>Fotografia</h3>
+    </div>
+
+    <div class="grid__works">
+      <h3>Fotografia</h3>
+    </div>
+
+    <div class="grid__works">
+      <h3>Fotografia</h3>
+    </div>
+
+    <div class="grid__works">
+      <h3>Fotografia</h3>
+    </div>
 
   </div>
 
@@ -82,26 +105,44 @@
 
 
 
-<!-- Font Awesome -->
-<!-- <script src="https://kit.fontawesome.com/ac3472581c.js" crossorigin="anonymous"></script> -->
+  <!-- Font Awesome (da includere a parte) -->
+  <!-- <script src="https://kit.fontawesome.com/ac3472581c.js" crossorigin="anonymous"></script> -->
 
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-<script type="text/javascript">
+  <script type="text/javascript">
+    /* Open Panel */
+    $(".header__hamburger").on('click', function() {
+      $(".header__menu").toggleClass("header__menu--open");
+    });
 
-  /* Open Panel */
-  $(".header__hamburger").on('click', function() {
-    $(".header__menu").toggleClass("header__menu--open");
-  });
+    /* Change Icon*/
+    $(document).ready(function() {
+      $(".header__hamburger").click(function() {
+        $(this).toggleClass("header__hamburger--active");
+      });
+    });
 
-  /* Change Icon*/
-  $(document).ready(function(){
-  $(".header__hamburger").click(function(){
-    $(this).toggleClass("header__hamburger--active");
-  });
-});
+    /* Change color on refresh */
+    $(document).ready(function() {
+      var colors = ["#4285F4", "#EA4335", "#34A853", "#F9AB00"];
+      var rand = Math.floor(Math.random() * colors.length);
+      $('.hero').css("background-color", colors[rand]);
+    });
 
-</script>
+    /* Greeting */
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+    var greet;
+    if (hrs < 12)
+      greet = 'Buongiorno';
+    else if (hrs >= 12 && hrs <= 17)
+      greet = 'Buon pomeriggio';
+    else if (hrs >= 17 && hrs <= 24)
+      greet = 'Buonasera';
+    document.getElementById('myGreet').innerHTML = greet;
+  </script>
+
 
 </body>
 
