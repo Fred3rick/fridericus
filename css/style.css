@@ -1,114 +1,117 @@
-body, html{font-family: 'Noto Sans',sans-serif;}
+body, html{font-family: 'Montserrat', sans-serif;}
 
-a{color: #fff; text-decoration: none;}
-.myskills{text-align: center; margin: 30px 0px auto;}
+/* -------------------------------------------------------------------------------- */
+/* ! Custom style */
+/* -------------------------------------------------------------------------------- */
+.navbar__logo{position: absolute; left: 0px;}
 
+.main__title{color: #ffffff; text-align: center; text-transform: uppercase; font-weight: 700; font-size: 70px; position: relative;}
 
-/* ! Header */
-.header{
-  display: flex;
-  justify-content: space-between;
-  height: 70px;
-  background: #393939;
+.main__subtitle{color: #ffffff; text-align: center; font-weight: 400; font-size: 25px; position: relative;}
+
+.jumbotron__filter{background: #1A2732; width:1140px; height:273px; position: absolute; z-index: 0; opacity: 0.7; }
+
+.info__bar{background-color: #4285F4;}
+
+.info__title{font-weight: 500; padding: 0px; color: #ffffff; padding: 2px;}
+
+.info__title p{margin: 0px;}
+
+.bar{position: relative; height: 5px; background: #F9AB00; width: 35px; top: -0.6rem;
+border-radius: 3px;
 }
 
-.header__logo img{width: 35px; height: 35px; margin: 18px 15px auto 15px;}
-.header__cta{padding: 15px;margin: 10px;}
-.header__menu ul{list-style-type: none; padding: 0;}
-.header__menu ul li{display: inline-block;}
-.header__menu ul li a{padding: 10px; display: inline-block;}
-.header__hamburger{display: none;}
+.card__subtitle a{
+  color: #F9AB00;
+}
 
-/* ! Hero */
-.hero{padding: 100px; text-align: center;}
-.hero h1{font-size: 60px; max-width: 800px; margin: 0 auto;}
-.hero h3{font-size: 30px; font-weight: normal;}
-.hero h5{font-size: 25px; margin: 0px 0px 15px 0px;}
 
-/* ! Grid */
-.grid{display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1300px; margin: 0 auto;}
-.grid__skill{flex-basis: 32%; padding: 30px;}
-.grid__skill img{width: 100%; height: auto;}
-.grid__skill h3{font-size: 32px; font-weight: 700; margin: 10px 0 10px 0;}
+/* -------------------------------------------------------------------------------- */
+/* ! General changes of Bootstrap */
+/* -------------------------------------------------------------------------------- */
 
-.grid_2{display: flex; justify-content: space-around; margin: 0 auto}
-.grid__works{flex-basis: 23%; text-transform: uppercase; padding-bottom: 150px; border: 1px solid red; display: block; background-color: #888;}
+.navbar{padding: .5rem; padding-right: 20px;}
+
+.navbar-toggler{border: 1px solid #ffffff;}
+
+.navbar-toggler:focus{outline: none;}
+
+.navbar-brand{margin-right: 0px; margin-left: 10px; margin-bottom: 3px;}
+
+.nav-link{text-transform: uppercase; text-align: center; padding: 10px; font-weight: 500;}
+
+.container{padding: 0px;} /* ! Da capire come funziona questa linea e perchè */
+
+.jumbotron{
+  border-radius: 0px;
+  margin: 0px;
+  background-image: url("../img/cover.jpg");
+  background-size: cover;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {padding-left: 1.5rem; padding-bottom: 7.5px;}
+
+.card{
+  border: 0px;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+.card-title{
+  font-weight: 700;
+  font-size: 30px;
+}
+
+
+.card:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+
+.card-title{
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* -------------------------------------------------------------------------------- */
-/* ! Tablet */
+/* ! Small devices (landscape phones, 576px and up) */
 /* -------------------------------------------------------------------------------- */
+@media (max-width: 576px) {
 
-@media (max-width: 998px ) {
+.jumbotron__filter{background: #1A2732; width:375px; height:240px; position: absolute; z-index: 0; opacity: 0.7; }
 
-}
-
-
-
-/* -------------------------------------------------------------------------------- */
-/* ! Smartphone */
-/* -------------------------------------------------------------------------------- */
-
-@media (max-width: 767px ) {
-
-/* ! Hero */
-.hero{padding: 55px;}
-.hero h5{font-size: 15px; margin: 0px 0px 5px 0px;}
-.hero h1{font-size: 45px;}
-.hero h3{font-size: 20px; font-weight: normal;}
-
-/* ! Header */
-.header__logo img{width: 35px; height: 35px; margin: 19px 20px auto 20px;}
-
-.header__menu {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  background: #393939;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-out;
-}
-
-.header__cta{padding: 15px 15px 15px 15px; margin: 12px; position: relative; right: 5px;}
-.header__menu ul li{display: block; width: 100%; text-align: center; padding: 15px; text-align: center;}
-.header__menu--open{max-height: 300px;} /*L'altezza massima del blocco dove poi parte l'animazione nel telefono*/
-.header__hamburger{display: block; padding: 25px; float: right;}
-.header__hamburger:hover{cursor: pointer;}  /* Per rendere cliccabile l'hamburger */
-
-.header__hamburger .line{
-  display: block;               /* Prima ti faccio vedere */
-  width: 30px;                  /* Larghezza */
-  height: 3px;                  /* Lunghezza */
-  background-color: #fff;       /* Colore di sfondo */
-  margin-bottom: 5px;           /* Margine tra le linee */
-  transition: all 0.3s ease;    /* Transizione di 0.3 secondi per l'hamburger */
-}
-
-.header__hamburger--active .line:nth-child(1){transform: translateY(7px) rotate(45deg);}
-.header__hamburger--active .line:nth-child(2){opacity: 0;}
-.header__hamburger--active .line:nth-child(3){transform: translateY(-9px) rotate(-45deg);}
-
-/* ! Grid */
-.grid__skill{flex-basis: 100%; margin: 0px 0px -40px 0px;}
-
-
-
-
-}
-
-
-
-
-
-
-/* ! Box Sizing */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
