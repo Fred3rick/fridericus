@@ -9,7 +9,10 @@ $(document).ready(function() {
 $(document).ready(function() {
   var colors = ["#4285F4", "#EA4335", "#34A853", "#F9AB00"];
   var rand = Math.floor(Math.random() * colors.length);
-  $('.hero').css("background-color", colors[rand]);
+  $('.info__bar').css("background-color", colors[rand]);
+  $('.card__subtitle a').css("color", colors[rand]);
+  $('.bar').css("background-color", colors[rand]);
+
 });
 
 /* Greeting */

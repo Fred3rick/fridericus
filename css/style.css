@@ -11,19 +11,18 @@ body, html{font-family: 'Montserrat', sans-serif;}
 
 .jumbotron__filter{background: #1A2732; width:1140px; height:273px; position: absolute; z-index: 0; opacity: 0.7; }
 
-.info__bar{background-color: #4285F4;}
+.news__bar{background-color: #ffffff;}
+.news{color: #ffffff; background-color: #1A2732; padding: 6px}
+.news__title ul{margin: 0px; padding: 0px;}
+.news__title ul li{display: inline-block;}
 
-.info__title{font-weight: 500; padding: 0px; color: #ffffff; padding: 2px;}
 
+
+.info__title{font-weight: 500; color: #ffffff; padding: 2px;}
 .info__title p{margin: 0px;}
 
-.bar{position: relative; height: 5px; background: #F9AB00; width: 35px; top: -0.6rem;
-border-radius: 3px;
-}
 
-.card__subtitle a{
-  color: #F9AB00;
-}
+.bar{position: relative; height: 5px; width: 35px; top: -0.6rem; border-radius: 3px;}
 
 
 /* -------------------------------------------------------------------------------- */
@@ -45,7 +44,7 @@ border-radius: 3px;
 .jumbotron{
   border-radius: 0px;
   margin: 0px;
-  background-image: url("../img/cover.jpg");
+  background-image: url("https://source.unsplash.com/1600x900/?nature,water");
   background-size: cover;
 }
 
@@ -53,7 +52,6 @@ border-radius: 3px;
 
 .card{
   border: 0px;
-  border-radius: 10px;
   transition: all 0.5s cubic-bezier(.25,.8,.25,1);
 }
 .card-title{
