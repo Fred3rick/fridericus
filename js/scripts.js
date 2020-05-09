@@ -12,6 +12,7 @@ $(document).ready(function() {
   $('.info__bar').css("background-color", colors[rand]);
   $('.card__subtitle a').css("color", colors[rand]);
   $('.bar').css("background-color", colors[rand]);
+  $('.progress__color').css("background-color", colors[rand]);
 
 });
 
