@@ -1,22 +1,20 @@
-/* Change Icon*/
+/* Change Icon
 $(document).ready(function() {
   $(".header__hamburger").click(function() {
     $(this).toggleClass("header__hamburger--active");
   });
-});
+}); */
 
 /* Change color on refresh */
 $(document).ready(function() {
   var colors = ["#4285F4", "#EA4335", "#34A853", "#F9AB00"];
   var rand = Math.floor(Math.random() * colors.length);
-  $('.info__bar').css("background-color", colors[rand]);
-  $('.card__subtitle a').css("color", colors[rand]);
+  $('.category').css("color", colors[rand]);
   $('.bar').css("background-color", colors[rand]);
-  $('.progress__color').css("background-color", colors[rand]);
-
+  $('.progress-bar').css("background-color", colors[rand]);
 });
 
-/* Greeting */
+/* Greeting
 var myDate = new Date();
 var hrs = myDate.getHours();
 var greet;
@@ -26,9 +24,9 @@ else if (hrs >= 12 && hrs <= 17)
   greet = 'Buon pomeriggio';
 else if (hrs >= 17 && hrs <= 24)
   greet = 'Buonasera';
-document.getElementById('myGreet').innerHTML = greet;
+document.getElementById('myGreet').innerHTML = greet;*/
 
-/*Real-Time clock*/
+/*Real-Time clock
 function clock() {
   var time = new Date(),
     hours = time.getHours(),
@@ -43,9 +41,9 @@ function clock() {
     return standIn;
   }
 }
-setInterval(clock, 1000);
+setInterval(clock, 1000);*/
 
-/*Date of today*/
+/*Date of today
 var today = new Date();
 var day = today.getDate();
 var month = today.getMonth() + 1;
@@ -59,4 +57,4 @@ if (month < 10) {
 }
 
 var out = document.getElementById("today");
-out.innerHTML = day + "/" + month + "/" + year;
+out.innerHTML = day + "/" + month + "/" + year;*/

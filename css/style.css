@@ -1,223 +1,94 @@
+/* -------------------------------------------------------------------------------- */
+/* ! Custom Style */
+/* -------------------------------------------------------------------------------- */
+
 body, html{
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden; /* ! Per evitare di scrollare da sinistra verso destra */
 }
 
-/* -------------------------------------------------------------------------------- */
-/* ! Custom style */
-/* -------------------------------------------------------------------------------- */
-.navbar__logo{position: absolute; left: 0px;}
-.main__title{color: #ffffff; text-align: center; text-transform: uppercase; font-weight: 700; font-size: 70px; position: relative;}
-.main__subtitle{color: #ffffff; text-align: center; font-weight: 400; font-size: 25px; position: relative;}
-
-
-.jumbotron__filter{
-  background: #2c3e4f;
-  width:100%;
-  height:100%;
-  position: absolute;
-  z-index: 0;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-}
-
-.news__bar{background-color: #ffffff;}
-.news{color: #ffffff; background-color: #1A2732; padding: 6px}
-.news__title ul{margin: 0px; padding: 0px;}
-.news__title ul li{display: inline-block;}
-
-marquee{
-  line-height: 1;
-  height: 36px;
-  white-space: nowrap;
-  position: absolute;
-}
-
-marquee li p{
-  margin-bottom: 12px;
-}
-
-marquee li a{
-  font-weight: 500;
-  color: #000000;
-}
-
-marquee li a:hover{
-  text-decoration: none;
-  color: #F9AB00;
-}
-.info__title{font-weight: 500; color: #ffffff; padding: 2px;}
-.info__title p{margin: 0px;}
+a{transition: .3s ease;}
+.container{padding: 0;}
 .bar{position: relative; height: 5px; width: 35px; top: -0.6rem; border-radius: 3px;}
-.card__works{padding: 0px; border:0px; display: none;}
-
-.fa-facebook-square{
-  color: #1A2732;
-  transition: 0.3s ease;
-}
-
-.fa-facebook-square:hover{
-  color: #5198f6;
-}
-
-.fa-instagram{
-  color: #1A2732;
-  transition: 0.3s ease;
-}
-
-.fa-instagram:hover{
-  color: #B14C9D;
-}
-
-.fa-envelope{
-  color: #1A2732;
-  transition: 0.3s ease;
-}
-
-.fa-envelope:hover{
-  color: #ff0000;
-}
-
-footer{
-  display: flex;
-  justify-content: space-between;
-  background-color: #1A2732;
-  padding: 20px;
-  color: #ffffff;
-}
-
-
-footer a{
-  color: #ffffff;
-}
-
-
-footer a:hover{
-  color: #ff0000;
-}
-
-.bar-center{position: relative; height: 5px; width: 35px; top: -0.6rem; border-radius: 3px;}
-
+.category{color: #333;}
+.category:hover{text-decoration: underline;}
 
 /* -------------------------------------------------------------------------------- */
-/* ! General changes of Bootstrap */
+/* ! Navbar */
 /* -------------------------------------------------------------------------------- */
-
-.navbar{padding: .5rem; padding-right: 20px;}
-
+.navbar{margin: 20px 0px 20px 0px; border-radius: 15px 15px 15px 15px}
+.navbar-expand-lg .navbar-nav .nav-link{padding-right: 1.0rem; padding-left: 1.0rem; color: #fff;}
+.navbar-brand{padding-bottom: 0;}
+a.nav-item.nav-link.active{font-weight: bold; border-radius: 15px; color: #F9AB00 !important;}
+.navbar-expand-lg .navbar-nav .nav-link:hover{color: #F9AB00; transition: .3s ease;}
+.navbar-expand-lg .navbar-nav .nav-link{text-align: center;}
+.navbar-toggler:focus{outline: none;}
 .navbar-toggler{border: 0px;}
 
-.navbar-toggler:focus{outline: none;}
 
-.navbar-brand{margin-right: 0px; margin-left: 10px; margin-bottom: 3px;}
-
-.nav-link{text-transform: uppercase; text-align: center; padding: 10px; margin: 0px; font-weight: 700;}
-
-.container{padding: 0px;} /* ! Da capire come funziona questa linea e perchè */
-
+/* -------------------------------------------------------------------------------- */
+/* ! Jumbotron (Cover) */
+/* -------------------------------------------------------------------------------- */
 .jumbotron{
-  height:70%;
-  background:url(../img/cover.jpg);
-  background-size: cover;
-  border-radius: 0px;
-  margin: 0px;
-  -o-background-size: cover;
+  background: url(../img/bg-cover.jpg) no-repeat center center;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-position: center center;
-  position:relative;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+.cover__title, .cover__subtitle{text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);}
+.cover__title{font-size: 90px;text-transform: uppercase; font-weight: bold;}
+.cover__subtitle{font-size: 30px;font-weight: 400;}
 
-.navbar-expand-lg .navbar-nav .nav-link {padding-left: 1.5rem; padding-bottom: 7.5px; color: #ffffff;}
-
-.navbar-dark .navbar-nav .active>.nav-link {text-decoration: underline;}
-
-.card{
-  margin-top: 16px; /* ! il margin top equivale a 1.000 rem (ovvero il mt-3 di bootstrap) */
-  border-radius: 0px;
-  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
-  border: 0px;
-}
-.card-title{
-  font-weight: 700;
-  font-size: 30px;
-}
-
-.card-img{
-  border-radius: 0px;
-}
-
-
-.card:hover{
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
-
-.card-title{
-  margin-bottom: 5px;
-}
-
-.card-header{
-  background-color: #21303d;
-  color: #ffffff;
-  font-weight: 500;
-  text-align: center;
-  font-size: 16px;
-}
-
-.position-relative{
-  background-color: #ffffff;
-}
-
-.progress{
-  border-radius: 0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+/* -------------------------------------------------------------------------------- */
+/* ! Blog Cards */
+/* -------------------------------------------------------------------------------- */
+.card{border-radius: 15px;border: 0;transition: all 0.5s cubic-bezier(.25,.8,.25,1);}
+.card:hover{box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+.card-title{color: #2c3e4f;font-weight: 700;font-size: 30px;}
 
 
 /* -------------------------------------------------------------------------------- */
-/* ! Small devices (landscape phones, 576px and up)
+/* ! Skills */
+/* -------------------------------------------------------------------------------- */
+.skill__body{padding: 20px;}
+.skill__bar{border-radius: 10px 10px 10px 10px;}
+
+
+/* -------------------------------------------------------------------------------- */
+/* ! Recents Works*/
+/* -------------------------------------------------------------------------------- */
+.recents__cards{padding: 20px 0px 10px 0px;}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Footer */
+/* -------------------------------------------------------------------------------- */
+.footer{border-radius: 15px; text-align: center; color: #fff;}
+
+
+/* -------------------------------------------------------------------------------- */
+/* ! Small Devices (Smartphone normali in 9:16 da 576px in giù)
 /* -------------------------------------------------------------------------------- */
 @media (max-width: 576px) {
 
-.blog__cards{padding: 20px;}
+.navbar{margin-top: 0px; border-radius: 0;}
+.blog__cards{padding: 0px 10px 0px 10px;}
+.cover__title{font-size: 50px;}
+.cover__subtitle{font-size: 20px}
+.skill__body{padding-left: 25px; margin-bottom: 20px;}
+.skill__bar{margin: 0px 10px 10px 10px;}
+.skill__cards{padding: 0px 10px 0px 10px;}
+.jumbotron{margin: 0px 10px 10px 10px;}
+.recents__cards{padding: 0px 10px 10px 10px;}
+.recents__videos{padding: 20px;}
+.footer p{margin:0}
 
-.card{
-  margin-bottom: 20px;
-  margin-top: 0px;
 }
-
-
-.news__bar{display: none;}
-.info__bar{display: none;}
-
-
-}
-
-
-
-
-
-
-
 
 /* -------------------------------------------------------------------------------- */
-/* ! Medium devices (tablets, 768px and up)
+/* ! Large devices (Desktops, da 992px in su)
 /* -------------------------------------------------------------------------------- */
-@media (max-width: 768px) {
-
-  .jumbotron__filter{display: none;}
-  .news__bar{display: none;}
-  .info__bar{display: none;}
-
-}
+@media (min-width: 992px) {}
