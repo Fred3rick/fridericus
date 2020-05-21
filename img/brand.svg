@@ -3,12 +3,13 @@
     width="0.5in" height="0.528in">
 <text kerning="auto"
       font-family="Myriad Pro"
+      font-weight="500"
       fill="rgb(0, 0, 0)"
       font-size="40px" x="0px"
       y="32.3599999999999px">
   <tspan
       font-size="40px"
-      font-family="Sanchez"
+      font-family="Montserrat"
       fill="#FFFFFF">
       fg
     </tspan>
