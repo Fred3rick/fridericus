@@ -4,245 +4,320 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Federico Giurdanella</title>
-  <!-- =========== Bootstrap CSS =========== -->
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- =========== Font-Awesome =========== -->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-  <!-- =========== Google Fonts =========== -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap">
-  <!-- =========== Custom style =========== -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Home Page</title>
 </head>
 
-<body style="background-color: #ededed;">
+<body>
 
-  <!-- ====================== Navbar ====================== -->
+  <!-- Cover -->
   <section class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2c3e4f;">
-      <a class="navbar-brand" href="#">
-        <img src="img/brand.svg" width="40px" height="40px" class="d-inline-block" alt="#" loading="lazy">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="blog.html">x</a>
-          <a class="nav-item nav-link" href="portfolio.html">x</a>
-          <a class="nav-item nav-link" href="about.html">x</a>
-          <a class="nav-item nav-link" href="v2/index.html">Accedi alla v2</a>
-        </div>
+    <div class="jumbotron">
+      <h1 class="cover__title">federico</h1>
+      <p class="cover__subtitle">La creatività richiede un'idea e del coraggio. <br>Per concretizzarla occorre la fede, oltre al coraggio.</p>
+    </div>
+  </section>
+
+  <!-- Navbar -->
+  <section class="container">
+    <nav class="navbar navbar-inverse">
+      <div class="navbar-header">
+        <ul class="navbar-toggle">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src="img/logo.svg" width="50px" height="51px" style="background-color: #fff;">
+        </a>
       </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </section>
-  <!-- ====================== End Navbar ====================== -->
 
-  <!-- ====================== Cover ====================== -->
-  <div class="container text-center">
-    <div class="jumbotron text-white">
-      <h1 class="cover__title">HOME PAGE</h1>
-      <h3 class="cover__subtitle">Benvenuto nella pagina principale</h3>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="page">
+      <div class="page-body">
+
+        <!-- Abuot me  -->
+        <section class="row">
+
+          <div class="col-sm-5 col-sm-push-3">
+            <h1 class="about__title">About me</h1>
+            <div class="bar"></div>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="col-sm-3 col-sm-pull-5">
+            <img src="https://via.placeholder.com/400x500" class="img-responsive">
+          </div>
+
+          <div class="col-sm-4">
+            <h1 class="about__sidebar__title">Sidebar</h1>
+            <div class="bar"></div>
+            <p class="about__sidebar__text">Contenuto 1</p>
+            <p class="">Contenuto 2</p>
+            <p class="">Contenuto 3</p>
+            <p class="">Contenuto 4</p>
+            <p class="">Contenuto 5</p>
+            <p class="">Contenuto 6</p>
+          </div>
+        </section>
+
+        <hr>
+
+        <!-- Skills & Tools -->
+        <section class="row">
+
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-12">
+
+                <p class="title__bar"><i class="fas fa-desktop"></i> TOOLS</p>
+                <p class="progress__title">PHOTOSHOP</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>
+
+                <p class="progress__title">SONY VEGAS</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>
+
+                <p class="progress__title">PREMIERE 2020</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-12">
+
+                <p class="title__bar"><i class="fab fa-buffer"></i> SKILLS</p>
+                <p class="progress__title">HTML 5</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>
+
+                <p class="progress__title">CSS 3</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>
+
+                <p class="progress__title">JAVASCRIPT</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <!-- Recents Works -->
+        <section class="row">
+
+          <div class="col-sm-6">
+            <h1 class="works__title">Recents Works</h1>
+            <div class="bar"></div>
+            <p class="works__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet.</p>
+            <button class="btn-lg works__button btn btn-primary">Ciao a tutti</button>
+          </div>
+
+          <div class="col-sm-6">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LPpGwdxH7T4"></iframe>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-zLC2n8QkFc"></iframe>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GtUbeNh26mk"></iframe>
+                  </div>
+                </div>
+
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><i class="fas fa-angle-left"></i></span>
+                  <span class="sr-only"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><i class="fas fa-angle-right"></i></span>
+                  <span class="sr-only"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <!-- Portfolio Projects -->
+        <div class="row">
+
+          <div class="col-sm-12">
+            <p class="title__bar"><i class="fas fa-edit"></i> PORTFOLIO PROJECTS</p>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="img/blog1.jpg" class="img-responsive">
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="img/blog2.jpg" class="img-responsive">
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="img/blog3.jpg" class="img-responsive">
+            </div>
+
+          </div>
+        </div>
+
+<hr class="divider">
+
+        <!-- Contact Section -->
+        <div class="row">
+
+          <div class="col-sm-6">
+
+            <h1>Contattami</h1>
+            <div class="bar"></div>
+
+            <form class="contact__form">
+
+              <div class="form-group">
+                <input type="name" class="form-control" id="exampleInputPassword1" placeholder="Nome">
+              </div>
+
+              <div class="form-group">
+                <input type="Surname" class="form-control" id="exampleInputSubjetct" placeholder="Cognome">
+              </div>
+
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Messaggio" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+
+          </div>
+
+
+          <div class="col-sm-6">
+
+            <h1>Seguimi sui social</h1>
+            <div class="bar"></div>
+
+            <p class="contact__form" contact__form>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="contact__point">
+            <p><i class="fa-1x fas fa-map-marker-alt"></i><span style="margin-left:16px;"></span>Via Mario Rossi, 58 </p>
+            <p><i class="fa-1x fas fa-phone-alt"></i><span style="margin-left:14px;"></span>+39 331 6161 78493</p>
+            <p><i class="fa-1x fas fa-envelope"></i><span style="margin-left:14px;"></span>mariorossi@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact__social">
+            <ul>
+              <li><a href=""><i class="fa-2x fab fa-whatsapp"></i></a></li>
+              <li><a href=""><i class="fa-2x fab fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fa-2x fab fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-2x fas fa-euro-sign"></i></a></li>
+            </ul>
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
     </div>
   </div>
-  <!-- ====================== End Cover ====================== -->
-
-  <!-- ====================== Blog Cards ====================== -->
-  <section class="container blog__cards">
-    <div class="row row-cols-1 row-cols-md-3">
-      <div class="col mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Learning the Code</h5>
-            <p class="card-subtitle mb-3"><a class="category" href="#">Category</a> on 31.02.2015</p>
-            <div class="bar"></div>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Learning the Code</h5>
-            <p class="card-subtitle mb-3"><a class="category" href="#">Category</a> on 31.02.2015</p>
-            <div class="bar"></div>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Learning the Code</h5>
-            <p class="card-subtitle mb-3"><a class="category" href="#">Category</a> on 31.02.2015</p>
-            <div class="bar"></div>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ====================== End Blog Cards ====================== -->
-
-  <!-- ====================== Skill Bar ====================== -->
-  <div class="container text-center mb-3">
-    <div class="text-white skill__bar" style="background-color: #2c3e4f;">
-      <h3 class="p-2"><i class="fa fa-angle-left"></i> MY SKILLS AND MY SOFTWARE
-        <i class="fa fa-angle-right"></i></h3>
-    </div>
-  </div>
-  <!-- ====================== End Skill Bar ====================== -->
-
-  <!-- ====================== Skills ====================== -->
-  <div class="container skill__cards">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card skill__body">
-          <div class="row">
-            <div class="col-1">
-              <img src="img/photoshop.jpg" alt="logo_photoshop" width="65px" height="65px">
-            </div>
-            <div class="ml-5 col-9">
-              <h5 class="mt-3">PHOTOSHOP</h5>
-              <div class="progress">
-                <div class="progress-bar progress__color" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-1">
-              <img src="img/vegas.jpg" alt="logo_vegas" width="65px" height="65px">
-            </div>
-            <div class="ml-5 col-9">
-              <h5 class="mt-3">SONY VEGAS</h5>
-              <div class="progress">
-                <div class="progress-bar progress__color" role="progressbar" style="width: 60%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-1">
-              <img src="img/premiere.jpg" alt="logo_premiere" width="65px" height="65px">
-            </div>
-            <div class="ml-5 col-9">
-              <h5 class="mt-3">PREMIERE</h5>
-              <div class="progress">
-                <div class="progress-bar progress__color" role="progressbar" style="width: 10%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card skill__body">
-          <div class="row">
-            <div class="col-1">
-              <img src="img/html5.png" alt="logo_html5" width="65px" height="65px">
-            </div>
-            <div class="ml-5 col-9">
-              <h5 class="mt-3">HTML 5</h5>
-              <div class="progress">
-                <div class="progress-bar progress__color" role="progressbar" style="width: 20%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-1">
-              <img src="img/css3.png" alt="logo_css3" width="65px" height="65px">
-            </div>
-            <div class="ml-5 col-9">
-              <h5 class="mt-3">CSS 3</h5>
-              <div class="progress">
-                <div class="progress-bar progress__color" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-1">
-              <img src="img/javascript.png" alt="logo_javascript" width="65px" height="65px">
-            </div>
-            <div class="ml-5 col-9">
-              <h5 class="mt-3">JAVASCRIPT</h5>
-              <div class="progress">
-                <div class="progress-bar progress__color" role="progressbar" style="width: 10%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ====================== End Skills ====================== -->
-
-  <!-- ====================== Recents Works ====================== -->
-  <div class="container ">
-    <div class="row recents__cards">
-      <div class="col-sm-6">
-        <div class="card p-4">
-          <div class="card-title mb-3">Recent Works</div>
-          <div class="bar"></div>
-          <p>Lorem ipsum dolor sit eccola eiciwoe amet, consectetur adipisicing elit. Ea necessitatibus, nesciunt fugiat assumenda, officiis ullam, vitae dolor dolorem est porro molestiae dolorum. Doloribus sed consequuntur vero illo aliquam
-            dolorem est porro molestiae dolorum. Doloribus sed consequuntur vero illo aliquam consequatur, at!</p>
-          <a class="btn btn-warning" href="#"> Dai un'occhiata al mio portfolio <i class="fa fa-angle-right"></i></a>
-        </div>
-      </div>
-      <div class="col-sm-6 recents__videos">
-        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LPpGwdxH7T4" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-zLC2n8QkFc" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GtUbeNh26mk" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Precedente</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Successivo</span>
-          </a>
-        </div>
-      </div>
-      <!-- ====================== End Recents Works ====================== -->
 
 
 
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
 
+  <script src="js/my-scripts.js"></script>
 
-
-
-
-      <!-- ====================== Footer ====================== -->
-      <div class="container text-center mt-3">
-        <div class="footer" style="background-color: #2c3e4f;">
-          <p class="p-3 ">&copy; Copyright 2020 | Cookie Poliicy | Privacy Policy</p>
-        </div>
-      </div>
-      <!-- ====================== End Footer ====================== -->
-
-
-
-
-      <!-- Script -->
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/scripts.js"></script>
-
+  <script>
+    $('.carousel').carousel({
+      interval: 600000
+    })
+  </script>
 </body>
 
 </html>
