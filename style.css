@@ -136,11 +136,12 @@ a{color: #fff;}
 /* -------------------------------------------------------------------------------- */
 /* ! Recents Works Section */
 /* -------------------------------------------------------------------------------- */
-.works__image{margin: 0;}
-.works__text{padding-top: 10px; text-align: justify; font-size: 15px}
+.works__text{padding-top: 10px; font-size: 15px}
 .works__title{margin: 0;}
 .work__section{padding: 0;}
-.works__button{background-color: red; border: none; border-radius: 0; transition: all .2s ease; margin-top: 15px;}
+.works__cta{color: #000; transition: all .2s ease; margin-top: 15px;}
+.works__cta > a{margin-top: 15px;}
+
 .carousel-inner > .item{margin-bottom: 15px; background-size: cover; background-position: center center;}
 .carousel-control.left,.carousel-control.right{background-image: none;}
 .glyphicon-chevron-left:before{content: "";}
@@ -174,17 +175,34 @@ a{color: #fff;}
 
 .contact__point{margin-top: 15px;}
 .contact__point > p{margin: 10px auto;}
-.contact__social ul{list-style-type: none;}
-.contact__social li{display: inline-block; padding: 10px;}
-.contact__social a{color: #000;}
-.fa-whatsapp{color: #3fca06;}
-.fa-facebook-f{color: #00c3ef;}
-.fa-instagram{color: #bf00ef;}
-.fa-euro-sign{color: #109900;}
 
 /* -------------------------------------------------------------------------------- */
 /* ! Footer Section */
 /* -------------------------------------------------------------------------------- */
+.footer{
+    background-color: #1A2732;
+    padding: 0;
+    margin-top: 20px;
+    border: 5px solid;
+    border-color: red;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    text-transform: uppercase;
+   }
+.footer{list-style-type: none;}
+.footer__social ul{list-style-type: none;}
+.footer__social li{display: inline-block; padding: 15px;} /* BUG: Non riesco a ricreare l'effetto della navbar */
+.footer__social li:hover{color: #000; background-color: #fff;}
+.footer__social li a{color: #fff; text-decoration: none;}
+
+.footer__social a:hover{color: #000; font-weight: 500; transition: all .2s ease;}
+
+.fa-whatsapp:hover{color: #3fca06; transition: all .2s ease;}
+.fa-facebook-f:hover{color: #00c3ef; transition: all .2s ease;}
+.fa-instagram:hover{color: #bf00ef; transition: all .2s ease;}
+.fa-euro-sign:hover{color: #109900; transition: all .2s ease;}
 
 
 
