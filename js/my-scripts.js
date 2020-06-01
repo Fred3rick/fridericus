@@ -10,8 +10,10 @@ $(document).ready(function() {
   var colors = ["#4285F4", "#EA4335", "#34A853", "#F9AB00"];
   var rand = Math.floor(Math.random() * colors.length);
   $('.footer').css("border-color", colors[rand]);
+  $('.contact__button').css("background-color", colors[rand]);
   $('.bar').css("background-color", colors[rand]);
   $('.progress-bar').css("background-color", colors[rand]);
+
 });
 
 /* Greeting
