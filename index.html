@@ -20,8 +20,8 @@
   <!-- Cover -->
   <section class="container">
     <div class="jumbotron">
-      <h1 class="cover__title">federico</h1>
-      <p class="cover__subtitle">La creatività richiede un'idea e del coraggio. <br>Per concretizzarla occorre la fede, oltre al coraggio.</p>
+      <h1 class="cover__title">Home page</h1>
+      <p>La creatività richiede un'idea e del coraggio. <br>Per concretizzarla occorre la fede, oltre al coraggio.</p>
     </div>
   </section>
 
@@ -30,20 +30,19 @@
     <nav class="navbar navbar-inverse">
       <div class="navbar-header">
         <ul class="navbar-toggle">
-          <li><a href="#"><i class="fa-2x fas fa-home"></i></a></li>
           <li><a href="#"><i class="fa-2x fas fa-th"></i></a></li>
-          <li><a href="#"><i class="fa-2x fas fa-folder"></i></a></li>
+          <li><a href="portfolio.html"><i class="fa-2x fas fa-folder"></i></a></li>
           <li><a href="#"><i class="fa-2x fas fa-user-alt"></i></a></li>
           <li><a href="#"><i class="fa-2x fas fa-file-signature"></i></a></li>
         </ul>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img alt="Brand" src="img/logo.svg" width="50px" height="51px" style="background-color: #fff;">
         </a>
       </div>
       <ul class="nav navbar-nav navbar-left">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -80,11 +79,11 @@
 
           <div class="col-sm-4">
             <div class="banner">
-            <a href="#"><img src="img/banner.gif" alt="Portfolio" class="img-responsive"></a></div>
+              <a href="portfolio.html"><img src="img/banner.gif" alt="Portfolio" class="img-responsive"></a></div>
             <!-- <h1 class="about__sidebar__title">Sidebar</h1>
             <div class="bar"></div> -->
-            <p class="about__sidebar__text">Guarda i miei progetti migliori. <a href="#">Scopri di più
-            <i class="fas fa-angle-right"></i></a></p>
+            <p class="about__sidebar__text">Guarda i miei progetti migliori. <a href="portfolio.html">Scopri di più
+                <i class="fas fa-angle-right"></i></a></p>
             <!-- <p class="">Contenuto 2</p>
             <p class="">Contenuto 3</p>
             <p class="">Contenuto 4</p>
@@ -171,11 +170,13 @@
             <p class="works__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
               commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               Lorem ipsum dolor sit amet.</p>
-              <button type="button" class="btn btn-primary btn-lg btn-block works__cta">Scopri di più</button>
-              <button type="button" class="btn btn-danger btn-lg btn-block works__cta">Scopri di più</button>
-            </div>
+            <button type="button" class="btn btn-success btn-lg btn-block works__cta">
+              <i class="fas fa-folder"></i> Scopri di più sui miei lavori</button>
+            <button type="button" class="btn btn-info btn-lg btn-block works__cta">
+              <i class="fas fa-user-alt"></i> Scopri di più su di me</button>
+          </div>
 
-          <div class="col-sm-6">
+          <!-- <div class="col-sm-6">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner" role="listbox">
 
@@ -207,7 +208,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </section>
 
@@ -291,7 +292,6 @@
           </div>
 
 
-
           <div class="col-sm-6">
 
             <h1 class="contact__title">Contattami</h1>
@@ -312,33 +312,15 @@
 
       </div> <!-- fine del page body -->
 
-
       <!-- Footer Section -->
       <footer class="footer">
-
         <p class="footer__item">&copy; 2020 Federico Giurdanella |
           <a href="#">federicogiurdanella.it</a> | TUTTI I DIRITTI RISERVATI</p>
-          <p>
-
-
-        <div class="footer_social">
-        </div>
-
+        <p>
       </footer>
-
-
 
     </div>
   </div>
-
-
-
-
-
-
-
-
-
 
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -353,6 +335,8 @@
       interval: 600000
     })
   </script>
+
+
 </body>
 
 </html>

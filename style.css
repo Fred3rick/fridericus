@@ -73,7 +73,8 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   background-size: cover;
 }
 
-.cover__title{font-size: 50px;}
+.cover__title{font-size: 60px; text-align: center; text-transform: uppercase}
+.jumbotron > p {padding-top: 20px; text-align: center; font-weight: 400;}
 
 /* -------------------------------------------------------------------------------- */
 /* ! Navbar */
@@ -187,7 +188,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 
 .contact__point{margin-top: 15px;}
 .contact__point > p{margin: 10px auto;}
-.contact__button{background-color: #fff;}
+.contact__button{background-color: #fff; color: #fff;}
 .contact__divider{margin: 0; border: none;}
 /* -------------------------------------------------------------------------------- */
 /* ! Footer Section */
@@ -249,14 +250,14 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 
 .page-body{padding: 15px;}
 
-.cover__title{font-size: 25px; text-align: center; padding: 35px;}
+.cover__title{font-size: 50px; text-align: center; padding-top: 50px;}
 
 
-.cover__subtitle{display: none;}
+.jumbotron > p{display: none;}
 
 .about__image{padding-bottom: 15px;}
 
-.jumbotron{margin: 0;height: 200px; padding: 0;}
+.jumbotron{margin: 0;height: 150px; padding: 0;}
 
 .navbar-toggle{padding: 0;}
 .navbar-toggle > li{padding-left: 10px; margin-top: 1px;}
@@ -267,7 +268,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 .carousel-inner > .item{margin-top: 15px;}
 .about__sidebar__text{text-align: center;}
 .contact__title{margin-top: 15px;}
-.contact__divider{margin-top: 20p; margin-bottom: 15px; border: 1px solid #333;}
-
+.footer{margin-bottom: 0;}
+.footer__item{font-size: 15px;}
 
 }
