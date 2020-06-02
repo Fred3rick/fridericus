@@ -9,7 +9,7 @@ body, html{
   background: #e7e7e7;
 }
 
-p, h1{margin: 0;}
+p, h1, h2, h3, h4, h5{margin: 0;}
 
 /* -------------------------------------------------------------------------------- */
 /* ! Custom style*/
@@ -20,11 +20,20 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 
 .bar{
   position: relative;
-  height: 5px;
+  height: 6px;
   width: 35px;
-  border-radius: 3px;
   margin-top: 10px;
   margin-bottom: 0px;
+  left: 0px;
+}
+
+.off__bar{
+  position: relative;
+  height: 6px;
+  width: 35px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  background-color: #f4f1f1;
   left: 0px;
 }
 
@@ -152,7 +161,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 .works__title{margin: 0;}
 .work__section{padding: 0;}
 
-.works__cta{transition: .2s ease; margin-top: 15px;}
+.works__cta{transition: .2s ease; margin-top: 15px; color: #fff;}
 
 
 .carousel-inner > .item{margin-bottom: 15px; background-size: cover; background-position: center center;}
@@ -188,7 +197,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 
 .contact__point{margin-top: 15px;}
 .contact__point > p{margin: 10px auto;}
-.contact__button{background-color: #fff; color: #fff;}
+.contact__button{background-color: #fff; color: #fff; transition: .2s ease;}
 .contact__divider{margin: 0; border: none;}
 /* -------------------------------------------------------------------------------- */
 /* ! Footer Section */
@@ -213,7 +222,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 
 
 .fa-whatsapp:hover{color: #3fca06; transition: all .2s ease;}
-.fa-facebook-f:hover{color: #00c3ef; transition: all .2s ease;}
+.fa-facebook-square:hover{color: #00c3ef; transition: all .2s ease;}
 .fa-instagram:hover{color: #bf00ef; transition: all .2s ease;}
 .fa-euro-sign:hover{color: #109900; transition: all .2s ease;}
 
@@ -225,6 +234,32 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   color: #fff;
 }
 
+/* -------------------------------------------------------------------------------- */
+/* ! Portfolio Page  */
+/* -------------------------------------------------------------------------------- */
+.portfolio__box{
+  position: relative;
+ }
+ .portfolio__overlay{
+   position: absolute;
+   bottom: 0;
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.67);
+   color: #f1f1f1;
+   width: 100%;
+   transition: .3s ease;
+   opacity: 1;
+   color: white;
+   font-size: 20px;
+   padding: 20px;
+   text-align: center;
+ }
+
+ .portfolio__box:hover .portfolio__overlay{
+   opacity: 0;
+ }
+
+.img-responsive{display: block;}
 
 
 
@@ -271,4 +306,14 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 .footer{margin-bottom: 0;}
 .footer__item{font-size: 15px;}
 
+}
+
+
+.reveal {
+opacity: 0;
+-webkit-transform: translate3d(0, 100px, 0);
+transform: translate3d(0, 100px, 0);
+transition: opacity 0.8s, -webkit-transform 0.8s;
+transition: opacity 0.8s, transform 0.8s;
+transition: opacity 0.8s, transform 0.8s, -webkit-transform 0.8s;
 }

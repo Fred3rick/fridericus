@@ -11,6 +11,7 @@ $(document).ready(function() {
   var rand = Math.floor(Math.random() * colors.length);
   $('.footer').css("border-color", colors[rand]);
   $('.contact__button').css("background-color", colors[rand]);
+  $('.works__cta').css("background-color", colors[rand]);
   $('.bar').css("background-color", colors[rand]);
   $('.progress-bar').css("background-color", colors[rand]);
 
