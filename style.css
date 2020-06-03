@@ -68,6 +68,8 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   padding-left: 15px;
 }
 
+.folio-body{padding: 15px 15px 0px 15px;}
+
 /* -------------------------------------------------------------------------------- */
 /* ! Jumbotron */
 /* -------------------------------------------------------------------------------- */
@@ -198,7 +200,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 .contact__point{margin-top: 15px;}
 .contact__point > p{margin: 10px auto;}
 .contact__button{background-color: #fff; color: #fff; transition: .2s ease;}
-.contact__divider{margin: 0; border: none;}
+.contact__divider{display: none;}
 /* -------------------------------------------------------------------------------- */
 /* ! Footer Section */
 /* -------------------------------------------------------------------------------- */
@@ -239,7 +241,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 /* -------------------------------------------------------------------------------- */
 .portfolio__box{
   position: relative;
- }
+}
  .portfolio__overlay{
    position: absolute;
    bottom: 0;
@@ -259,7 +261,6 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
    opacity: 0;
  }
 
-.img-responsive{display: block;}
 
 
 
@@ -305,15 +306,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 .contact__title{margin-top: 15px;}
 .footer{margin-bottom: 0;}
 .footer__item{font-size: 15px;}
-
-}
-
-
-.reveal {
-opacity: 0;
--webkit-transform: translate3d(0, 100px, 0);
-transform: translate3d(0, 100px, 0);
-transition: opacity 0.8s, -webkit-transform 0.8s;
-transition: opacity 0.8s, transform 0.8s;
-transition: opacity 0.8s, transform 0.8s, -webkit-transform 0.8s;
+.contact__divider{margin-top: 15px; margin-bottom: 15px; border-top: 1px solid #eee; display: block;}
+.portfolio__box{margin-top: 20px;}
+.folio-body{padding-top: 0; padding-left: 15px; padding-right: 15px;}
 }
