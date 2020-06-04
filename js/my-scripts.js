@@ -14,6 +14,8 @@ $(document).ready(function() {
   $('.works__cta').css("background-color", colors[rand]);
   $('.bar').css("background-color", colors[rand]);
   $('.progress-bar').css("background-color", colors[rand]);
+  $('.my__resume').css("background-color", colors[rand]);
+
 
 });
 

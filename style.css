@@ -46,6 +46,22 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
     margin-top: 0px;
 }
 
+.love svg{height: 1.3rem; padding: 0 .4rem; animation: 1.5s heartThrob infinite;}
+
+@keyframes heartThrob {
+  25% {
+    transform:scale(1.15);
+  }
+  40% {
+    transform:scale(1);
+  }
+  60% {
+    transform:scale(1.15);
+  }
+  90% {
+    transform:scale(1);
+  }
+}
 
 .input-group > input, .input-group-addon{background-color: #fff; border: 0px; border-radius: 0px;}
 .form-control:focus{box-shadow: none;}
@@ -80,12 +96,26 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   height: 250px;
   text-align: left;
   color: #fff;
-  background-color: #000;
   background-size: cover;
+  background-position: center center;
+  position: relative;
+
 }
 
-.cover__title{font-size: 60px; text-align: center; text-transform: uppercase}
+.jumbotron > .overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(26, 39, 50, 0.60);
+  z-index: 1;}
+
+.jumbotron > h1{font-size: 90px;}
+.cover__title{text-align: center; text-transform: uppercase; padding: 35px;}
 .jumbotron > p {padding-top: 20px; text-align: center; font-weight: 400;}
+
+.cover__title, .jumbotron > p{position: relative; z-index: 2;}
 
 /* -------------------------------------------------------------------------------- */
 /* ! Navbar */
@@ -207,7 +237,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 .footer{
     background-color: #1A2732;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 15px;
     border: 4px solid;
     border-color: red;
     border-bottom: none;
@@ -218,9 +248,9 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 }
 
 
-.footer__item {padding: 15px; color: #fff;}
+.footer__item {padding: 15px; color: #fff; font-weight: 400;}
 .footer__item a{text-decoration: none; transition: all .2s ease; color: #fff;}
-.footer__item a:hover{color: red; transition: all .2s ease;}
+.footer__item a:hover{color: #ff005d; transition: all .2s ease;}
 
 
 .fa-whatsapp:hover{color: #3fca06; transition: all .2s ease;}
@@ -262,6 +292,10 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
  }
 
 
+
+.my__resume{padding: 20px; color: #fff; margin-top: 15px;}
+.my__resume h2,p{margin-top: 15px;}
+.divider-inverse{margin-top: 20px; margin-bottom: 10px;}
 
 
 
@@ -305,8 +339,9 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 .about__sidebar__text{text-align: center;}
 .contact__title{margin-top: 15px;}
 .footer{margin-bottom: 0;}
-.footer__item{font-size: 15px;}
-.contact__divider{margin-top: 15px; margin-bottom: 15px; border-top: 1px solid #eee; display: block;}
+.footer__item{font-size: 16px; padding: 20px;}
+.contact__divider{margin-top: 20px; margin-bottom: 15px; border-top: 1px solid #eee; display: block;}
 .portfolio__box{margin-top: 20px;}
 .folio-body{padding-top: 0; padding-left: 15px; padding-right: 15px;}
+
 }

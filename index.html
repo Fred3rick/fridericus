@@ -19,9 +19,9 @@
 
   <!-- Cover -->
   <section class="container">
-    <div class="jumbotron">
+    <div class="jumbotron" style="background-image: url(img/home.jpg);">
+      <div class="overlay"></div>
       <h1 class="cover__title">Home page</h1>
-      <p>La creatività richiede un'idea e del coraggio. <br>Per concretizzarla occorre la fede, oltre al coraggio.</p>
     </div>
   </section>
 
@@ -30,9 +30,9 @@
     <nav class="navbar navbar-inverse">
       <div class="navbar-header">
         <ul class="navbar-toggle">
-          <li><a href="#"><i class="fa-2x fas fa-th"></i></a></li>
           <li><a href="portfolio.html"><i class="fa-2x fas fa-folder"></i></a></li>
           <li><a href="about.html"><i class="fa-2x fas fa-user-alt"></i></a></li>
+          <li><a href="#"><i class="fa-2x fas fa-th"></i></a></li>
         </ul>
         <a class="navbar-brand" href="index.html">
           <img alt="Brand" src="img/logo.svg" width="50px" height="51px" style="background-color: #fff;">
@@ -229,27 +229,43 @@
             </div>
           </div>
 
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="img/blog3.jpg" class="img-responsive">
-            </div>
-          </div>
+        </div>
 
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="img/blog2.jpg" class="img-responsive">
-            </div>
-          </div>
+        <hr class="divider">
 
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="img/blog1.jpg" class="img-responsive">
+
+
+        <!-- My resume -->
+
+        <p class="title__bar"><i class="fa fa-briefcase"></i> EXPERIENCE</p>
+
+
+        <div class="my__resume">
+          <div class="row">
+
+            <div class="col-sm-12">
+              <h2>Master in Web Designing //<span style="font-size: 22px; font-weight: 400;"> Jan 2006 - Jan 2008</span></h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div class="col-sm-12">
+              <h2>Bachelor in Computer Science //<span style="font-size: 22px; font-weight: 400;"> Jan 2002 - Jan 2006</span></h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div class="col-sm-12">
+              <h2>Inter //<span style="font-size: 22px; font-weight: 400;"> Jan 2000 - Jan 2002</span></h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
 
         </div>
 
-        <hr class="divider">
+
+        <hr class="divider-inverse">
 
         <!-- Contact Section -->
         <div class="row">
@@ -302,13 +318,19 @@
 
         </div>
 
-      </div> <!-- fine del page body -->
 
+      </div> <!-- fine del page body -->
 
       <!-- Footer Section -->
       <footer class="footer">
-        <p class="footer__item">&copy; 2020 Federico Giurdanella |
-          <a href="#">federicogiurdanella.it</a> | TUTTI I DIRITTI RISERVATI</p>
+        <div class="love">
+          <h5 class="footer__item">Made with<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 92 72" enable-background="new 0 0 92 72" xml:space="preserve" aria-labelledby="heartTitle"
+              role="img">
+              <title id="heartTitle">A Heart Full of Love</title>
+              <path fill="#ff005d" d="M82.32,7.888c-8.359-7.671-21.91-7.671-30.271,0l-5.676,5.21l-5.678-5.21c-8.357-7.671-21.91-7.671-30.27,0 c-9.404,8.631-9.404,22.624,0,31.255l35.947,32.991L82.32,39.144C91.724,30.512,91.724,16.52,82.32,7.888z">
+              </path>
+            </svg>by <strong><a href="#">@federicogiurdanella</a></strong></h5>
+        </div>
         <p>
       </footer>
 
