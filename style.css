@@ -111,9 +111,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   background-color: rgba(26, 39, 50, 0.60);
   z-index: 1;}
 
-.jumbotron > h1{font-size: 90px;}
-.cover__title{text-align: center; text-transform: uppercase; padding: 35px;}
-.jumbotron > p {padding-top: 20px; text-align: center; font-weight: 400;}
+.jumbotron > h1{padding-top: 35px ;font-size: 90px; text-align: center; text-transform: uppercase;}
 
 .cover__title, .jumbotron > p{position: relative; z-index: 2;}
 
@@ -324,6 +322,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 
 
 .jumbotron > p{display: none;}
+.jumbotron > h1{font-size: 50px; padding-top: 50px;}
 
 .about__image{padding-bottom: 15px;}
 
