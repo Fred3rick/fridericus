@@ -63,7 +63,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   }
 }
 
-.input-group > input, .input-group-addon{background-color: #fff; border: 0px; border-radius: 0px;}
+.input-group > input, .input-group-addon{border: 0px; border-radius: 0px;}
 .form-control:focus{box-shadow: none;}
 
 .divider{margin-top: 5px; margin-bottom: 20px;}
@@ -174,8 +174,8 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 /* -------------------------------------------------------------------------------- */
 /* ! About Section */
 /* -------------------------------------------------------------------------------- */
-
-.about__text{font-size: 15px; padding-top: 10px;}
+.about__sidebar__text{margin: 0;}
+.about__text{font-size: 15px;}
 .about__sidebar__text, .about__sidebar__text{
   padding-top: 10px;
   font-size: 14px;
@@ -187,11 +187,14 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 /* -------------------------------------------------------------------------------- */
 /* ! Recents Works Section */
 /* -------------------------------------------------------------------------------- */
-.works__text{padding-top: 10px; font-size: 15px}
+.works__text{font-size: 15px}
 .works__title{margin: 0;}
 .work__section{padding: 0;}
 
 .works__cta{transition: .2s ease; margin-top: 15px; color: #fff;}
+
+.works__logos{display: flex; justify-content: space-around;}
+.works__logo{width: 25%; padding-top: 15px;}
 
 
 .carousel-inner > .item{margin-bottom: 15px; background-size: cover; background-position: center center;}
@@ -295,6 +298,17 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 .my__resume h2,p{margin-top: 15px;}
 .divider-inverse{margin-top: 20px; margin-bottom: 10px;}
 
+.search__form{
+  height: 45px;
+  border-radius: 0;
+  border: 0;
+  font-size: 20px;
+  box-shadow: none;
+}
+
+.input-group > input, .input-group-addon{
+  background-color: e9ecef;
+}
 
 
 /* -------------------------------------------------------------------------------- */
@@ -308,8 +322,6 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 /* -------------------------------------------------------------------------------- */
 .about__title, .about__sidebar__title{color: #1A2732; padding-top: 10px;}
 .about__text{text-align: justify; margin-bottom: 15px;}
-.about__text, .about__sidebar__text{font-size: 15px; padding-top: 10px;}
-
 .navbar-nav{margin: 0;}
 
 .container {padding: 0;}
@@ -335,12 +347,14 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 
 .banner{margin-top: 20px;}
 .carousel-inner > .item{margin-top: 15px;}
-.about__sidebar__text{text-align: center;}
+.about__sidebar__text{text-align: center; margin: 0;}
 .contact__title{margin-top: 15px;}
 .footer{margin-bottom: 0;}
 .footer__item{font-size: 16px; padding: 20px;}
 .contact__divider{margin-top: 20px; margin-bottom: 15px; border-top: 1px solid #eee; display: block;}
 .portfolio__box{margin-top: 20px;}
 .folio-body{padding-top: 0; padding-left: 15px; padding-right: 15px;}
+.works__logo{width: 35%; padding-top: 5px; padding-bottom: 10px;}
+
 
 }
