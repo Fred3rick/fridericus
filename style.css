@@ -10,6 +10,7 @@ body, html{
 }
 
 p, h1, h2, h3, h4, h5{margin: 0;}
+ul{padding-inline-start: 15px}
 
 /* -------------------------------------------------------------------------------- */
 /* ! Custom style*/
@@ -310,7 +311,28 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   background-color: e9ecef;
 }
 
+.blog__title, {margin-top: 5px;}
 .article{margin-bottom: 15px;}
+.btn-warning{border-radius: 0px; border: 0; padding: 4px; font-size: 13px; margin-top: 5px; margin-right: 5px; font-weight: 500}
+.blog__text{margin-top: 5px;}
+.category__bar{display: flex;}
+.date{margin-top: 10px}
+.blog__divider{margin-top: 10px; margin-bottom: 10px; border: 1px solid #333; padding: 0;}
+
+/*ScrollReveal*/
+section {
+	top: 50px;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+section.active {
+	opacity: 1;
+	top: 0;
+}
+/*fine Scroll*/
+
+
 
 /* -------------------------------------------------------------------------------- */
 /* ! Extra small devices (smartphone, fino ai 768px) */
@@ -357,8 +379,9 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 .folio-body{padding-top: 0; padding-left: 15px; padding-right: 15px;}
 .works__logo{width: 35%; padding-top: 5px; padding-bottom: 10px;}
 
-.blog__title{margin-top: 10px;}
-.blog__text{margin-top: 10px;}
-
+.blog__title{margin-top: 5px;}
+.blog__text{margin-top: 5px;}
+.date{margin-top: 9px;}
+.project__title{margin-top: 5px;}
 
 }

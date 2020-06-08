@@ -15,6 +15,8 @@ $(document).ready(function() {
   $('.bar').css("background-color", colors[rand]);
   $('.progress-bar').css("background-color", colors[rand]);
   $('.my__resume').css("background-color", colors[rand]);
+  $('.btn-warning').css("background-color", colors[rand]);
+
 
 
 });
@@ -63,3 +65,23 @@ if (month < 10) {
 
 var out = document.getElementById("today");
 out.innerHTML = day + "/" + month + "/" + year;*/
+
+
+
+/*ScrollReveal*/
+function scrollReveal() {
+	var revealPoint = 150;
+	var revealElement = document.querySelectorAll(".scroll");
+	for (var i = 0; i < revealElement.length; i++) {
+		var windowHeight = window.innerHeight;
+		var revealTop = revealElement[i].getBoundingClientRect().top;
+		if (revealTop < windowHeight - revealPoint) {
+			revealElement[i].classList.add("active");
+		} else {
+			revealElement[i].classList.remove("active");
+		}
+	}
+}
+
+window.addEventListener("scroll", scrollReveal);
+scrollReveal();
