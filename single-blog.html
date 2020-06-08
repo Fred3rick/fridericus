@@ -12,16 +12,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  <title>About</title>
+  <title>Single blog</title>
 </head>
 
 <body>
 
   <!-- Cover -->
   <section class="container scroll">
-    <div class="jumbotron" style="background-image: url(img/about.jpg);">
+    <div class="jumbotron" style="background-image: url(img/blog1.jpg);">
       <div class="overlay"></div>
-      <h1 class="cover__title">About me</h1>
+      <h1 class="cover__title">Single blog</h1>
     </div>
   </section>
 
@@ -58,13 +58,26 @@
     <div class="page">
       <div class="page-body">
 
-        <!-- About Section -->
-        <section class="row scroll">
+        <div class="row">
 
           <div class="col-sm-8">
-            <h1>Chi Sono?</h1>
-            <div class="bar"></div>
-            <h4 style="margin-top:15px;">Ciao sono Federico,</h4>
+            <h1 class="super__title">
+              Ecco a voi il super mega ultra iper titolo gigante di questo post
+            </h1>
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object img-circle" src="img/blog1.jpg" width="64" height="64" style="margin-bottom: 15px;">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">by Federico Giurdanella</h4>
+                <span>31 Febbraio</span>
+              </div>
+            </div>
+
+            <img src="img/about.jpg" class="img-responsive">
+
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet justo lacus, nec venenatis justo blandit nec. Sed in viverra odio, at tempor lectus. Integer mollis mi quis nisi elementum vulputate.
               Curabitur at orci nec
               nunc fringilla ultricies ac nec enim. In id convallis lectus, id consequat metus. Curabitur aliquet luctus felis eget gravida. Fusce at urna mauris. In a lorem eget odio posuere eleifend. <br><br>
@@ -77,20 +90,32 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet justo lacus, nec venenatis justo blandit nec. Sed in viverra odio, at tempor lectus. Integer mollis mi quis nisi elementum vulputate. Curabitur at orci nec
               nunc fringilla ultricies ac nec enim. In id convallis lectus, id consequat metus. Curabitur aliquet luctus felis eget gravida. <br><br>
             </p>
-            <a href="#"><img src="https://fontmeme.com/permalink/200604/ff21306f594647affb918de18543b1d7.png"></a>
-          </div>
 
+          </div>
 
           <div class="col-sm-4">
-            <img src="https://via.placeholder.com/400x250" class="img-responsive" style="margin-bottom: 15px;">
-            <img src="img/banner.gif" class="img-responsive">
-            <img src="https://via.placeholder.com/400x250" class="img-responsive" style="margin-top: 15px;">
+            
+            <form class="search__form">
+              <div class="input-group">
+                <input type="name" class="form-control" placeholder="Cerca">
+                <div class="input-group-addon"><i class="fas fa-search"></i></div>
+              </div>
+            </form>
+
+            <a href="portfolio.html"><img src="img/banner.gif" class="img-responsive" style="margin-top: 15px; margin-bottom: 15px;"></a>
+
+
           </div>
 
-        </section>
+        </div>
 
-      </div>
 
+
+
+
+
+
+      </div> <!-- fine page body -->
 
       <!-- Footer Section -->
       <footer class="footer">
@@ -104,8 +129,10 @@
         </div>
       </footer>
 
+
     </div>
   </div>
+
 
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>

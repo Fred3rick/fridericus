@@ -305,6 +305,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   border: 0;
   font-size: 20px;
   box-shadow: none;
+  margin-bottom: 15px;
 }
 
 .input-group > input, .input-group-addon{
@@ -333,6 +334,9 @@ section.active {
 /*fine Scroll*/
 
 
+.super__title{font-size: 45px;}
+.media-body h4{margin-top: 10px; margin-left: 10px;}
+.media-body span{margin-left: 10px;}
 
 /* -------------------------------------------------------------------------------- */
 /* ! Extra small devices (smartphone, fino ai 768px) */

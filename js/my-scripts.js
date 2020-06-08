@@ -67,7 +67,6 @@ var out = document.getElementById("today");
 out.innerHTML = day + "/" + month + "/" + year;*/
 
 
-
 /*ScrollReveal*/
 function scrollReveal() {
 	var revealPoint = 150;
