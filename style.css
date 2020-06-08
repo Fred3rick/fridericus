@@ -310,6 +310,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   background-color: e9ecef;
 }
 
+.article{margin-bottom: 15px;}
 
 /* -------------------------------------------------------------------------------- */
 /* ! Extra small devices (smartphone, fino ai 768px) */
@@ -355,6 +356,9 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 .portfolio__box{margin-top: 20px;}
 .folio-body{padding-top: 0; padding-left: 15px; padding-right: 15px;}
 .works__logo{width: 35%; padding-top: 5px; padding-bottom: 10px;}
+
+.blog__title{margin-top: 10px;}
+.blog__text{margin-top: 10px;}
 
 
 }
