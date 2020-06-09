@@ -11,22 +11,23 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Home Page</title>
 </head>
 
 <body>
 
   <!-- Cover -->
-  <section class="container scroll">
+  <div class="container">
     <div class="jumbotron" style="background-image: url(img/home.jpg);">
       <div class="overlay"></div>
+      <h5 class="greet__title" id="myGreet"></h5>
       <h1 class="cover__title">Home page</h1>
     </div>
-  </section>
+  </div>
 
   <!-- Navbar -->
-  <section class="container scroll">
+  <div class="container">
     <nav class="navbar navbar-inverse">
       <div class="navbar-header">
         <ul class="navbar-toggle">
@@ -45,14 +46,11 @@
         <li><a href="about.html">About</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right nav__social">
-        <!-- <li><a href="#"><i class="fab fa-whatsapp"></i></a></li> -->
         <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <!-- <li><a href="#"><i class="fas fa-euro-sign"></i></a></li> -->
       </ul>
     </nav>
-  </section>
-
+  </div>
 
   <!-- Page Content -->
   <div class="container">
@@ -60,7 +58,7 @@
       <div class="page-body">
 
         <!-- About me  -->
-        <section class="row scroll">
+        <section class="row">
 
           <div class="col-sm-5 col-sm-push-3">
             <h1 class="about__title">About me</h1>
@@ -78,27 +76,19 @@
           <div class="col-sm-4">
             <div class="banner">
               <a href="portfolio.html"><img src="img/banner.gif" alt="Portfolio" class="img-responsive"></a></div>
-            <!-- <h1 class="about__sidebar__title">Sidebar</h1>
-            <div class="bar"></div> -->
-            <p class="about__sidebar__text">Guarda i miei progetti migliori. <a href="portfolio.html">Scopri di più
-                <i class="fas fa-angle-right"></i></a></p>
-            <!-- <p class="">Contenuto 2</p>
-            <p class="">Contenuto 3</p>
-            <p class="">Contenuto 4</p>
-            <p class="">Contenuto 5</p>
-            <p class="">Contenuto 6</p> -->
+            <p class="about__sidebar__text">Guarda i miei progetti migliori. <a href="portfolio.html">Scopri di più<i class="fas fa-angle-right"></i></a></p>
           </div>
         </section>
 
         <hr>
 
         <!-- Skills & Tools -->
-        <section class="row scroll">
+        <section class="row">
 
           <div class="col-sm-6">
             <div class="row">
-              <div class="col-sm-12">
 
+              <div class="col-sm-12">
                 <p class="title__bar"><i class="fas fa-desktop"></i> TOOLS</p>
                 <p class="progress__title">PHOTOSHOP</p>
                 <div class="progress">
@@ -122,13 +112,14 @@
                 </div>
 
               </div>
+
             </div>
           </div>
 
           <div class="col-sm-6">
             <div class="row">
-              <div class="col-sm-12">
 
+              <div class="col-sm-12">
                 <p class="title__bar"><i class="fab fa-buffer"></i> SKILLS</p>
                 <p class="progress__title">HTML 5</p>
                 <div class="progress">
@@ -160,7 +151,7 @@
         <hr class="divider">
 
         <!-- Recents Works -->
-        <section class="row scroll">
+        <section class="row">
 
           <div class="col-sm-6">
             <h1 class="works__title">Recents Works</h1>
@@ -208,7 +199,7 @@
         <hr class="divider">
 
         <!-- Portfolio Projects -->
-        <section class="row scroll">
+        <section class="row">
           <div class="col-sm-12">
             <p class="title__bar"><i class="fas fa-edit"></i> PORTFOLIO PROJECTS</p>
           </div>
@@ -232,7 +223,7 @@
         <hr class="divider">
 
         <!-- My resume -->
-        <section class="scroll">
+        <section class="#">
           <p class="title__bar"><i class="fa fa-briefcase"></i> EXPERIENCE</p>
           <div class="my__resume">
             <div class="row">
@@ -261,7 +252,7 @@
         <hr class="divider-inverse">
 
         <!-- Contact Section -->
-        <section class="row scroll">
+        <section class="row">
           <div class="col-sm-6">
             <h1>Iniviami un messaggio</h1>
             <div class="bar"></div>
@@ -314,13 +305,13 @@
     </div>
   </div>
 
-
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
   <!-- Bootstrap JS -->
   <script src="js/bootstrap.min.js"></script>
 
+  <!-- My scripts -->
   <script src="js/my-scripts.js"></script>
 
   <script>

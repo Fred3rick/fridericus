@@ -11,22 +11,22 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>About</title>
 </head>
 
 <body>
 
   <!-- Cover -->
-  <section class="container scroll">
+  <div class="container">
     <div class="jumbotron" style="background-image: url(img/about.jpg);">
       <div class="overlay"></div>
       <h1 class="cover__title">About me</h1>
     </div>
-  </section>
+  </div>
 
   <!-- Navbar -->
-  <section class="container scroll">
+  <div class="container">
     <nav class="navbar navbar-inverse">
       <div class="navbar-header">
         <ul class="navbar-toggle">
@@ -47,11 +47,9 @@
       <ul class="nav navbar-nav navbar-right nav__social">
         <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <!-- <li><a href="#"><i class="fas fa-euro-sign"></i></a></li> -->
       </ul>
     </nav>
-  </section>
-
+  </div>
 
   <!-- Page Content -->
   <div class="container">
@@ -59,7 +57,7 @@
       <div class="page-body">
 
         <!-- About Section -->
-        <section class="row scroll">
+        <section class="row">
 
           <div class="col-sm-8">
             <h1>Chi Sono?</h1>
@@ -83,14 +81,13 @@
 
           <div class="col-sm-4">
             <img src="https://via.placeholder.com/400x250" class="img-responsive" style="margin-bottom: 15px;">
-            <img src="img/banner.gif" class="img-responsive">
+            <a href="portfolio.html"><img src="img/banner.gif" class="img-responsive"></a>
             <img src="https://via.placeholder.com/400x250" class="img-responsive" style="margin-top: 15px;">
           </div>
 
         </section>
 
       </div>
-
 
       <!-- Footer Section -->
       <footer class="footer">
@@ -112,7 +109,7 @@
 
   <!-- Bootstrap JS -->
   <script src="js/bootstrap.min.js"></script>
-
+  <!-- My scripts -->
   <script src="js/my-scripts.js"></script>
 
 </body>

@@ -1,10 +1,3 @@
-/* Change Icon
-$(document).ready(function() {
-  $(".header__hamburger").click(function() {
-    $(this).toggleClass("header__hamburger--active");
-  });
-}); */
-
 /* Change color on refresh */
 $(document).ready(function() {
   var colors = ["#4285F4", "#EA4335", "#34A853", "#F9AB00"];
@@ -16,12 +9,9 @@ $(document).ready(function() {
   $('.progress-bar').css("background-color", colors[rand]);
   $('.my__resume').css("background-color", colors[rand]);
   $('.btn-warning').css("background-color", colors[rand]);
-
-
-
 });
 
-/* Greeting
+/*Greet
 var myDate = new Date();
 var hrs = myDate.getHours();
 var greet;
@@ -65,22 +55,3 @@ if (month < 10) {
 
 var out = document.getElementById("today");
 out.innerHTML = day + "/" + month + "/" + year;*/
-
-
-/*ScrollReveal*/
-function scrollReveal() {
-	var revealPoint = 150;
-	var revealElement = document.querySelectorAll(".scroll");
-	for (var i = 0; i < revealElement.length; i++) {
-		var windowHeight = window.innerHeight;
-		var revealTop = revealElement[i].getBoundingClientRect().top;
-		if (revealTop < windowHeight - revealPoint) {
-			revealElement[i].classList.add("active");
-		} else {
-			revealElement[i].classList.remove("active");
-		}
-	}
-}
-
-window.addEventListener("scroll", scrollReveal);
-scrollReveal();

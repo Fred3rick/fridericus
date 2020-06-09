@@ -17,7 +17,6 @@ ul{padding-inline-start: 15px}
 /* -------------------------------------------------------------------------------- */
 
 a{color: #000; transition: .2s ease;}
-
 a:hover{text-decoration: none; color: red; transition: .2s ease;}
 
 .bar{
@@ -26,6 +25,16 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   width: 35px;
   margin-top: 10px;
   margin-bottom: 0px;
+  left: 0px;
+}
+
+.off__bar{
+  position: relative;
+  height: 6px;
+  width: 35px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  background-color: #f4f1f1;
   left: 0px;
 }
 
@@ -39,12 +48,6 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 }
 
 .love svg{height: 1.3rem; padding: 0 .4rem; animation: 1.5s heartThrob infinite;}
-.divider{margin-top: 5px; margin-bottom: 20px;}
-.divider-inverse{margin-top: 20px; margin-bottom: 10px;}
-
-/* -------------------------------------------------------------------------------- */
-/* ! Animation */
-/* -------------------------------------------------------------------------------- */
 
 @keyframes heartThrob {
   25% {
@@ -60,6 +63,11 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
     transform:scale(1);
   }
 }
+
+.input-group > input, .input-group-addon{border: 0px; border-radius: 0px;}
+.form-control:focus{box-shadow: none;}
+
+.divider{margin-top: 5px; margin-bottom: 20px;}
 
 /* -------------------------------------------------------------------------------- */
 /* ! Page Content */
@@ -77,9 +85,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   padding-left: 15px;
 }
 
-.folio-body{
-  padding: 15px 15px 0px 15px;
-}
+.folio-body{padding: 15px 15px 0px 15px;}
 
 /* -------------------------------------------------------------------------------- */
 /* ! Jumbotron */
@@ -94,6 +100,7 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   background-size: cover;
   background-position: center center;
   position: relative;
+
 }
 
 .jumbotron > .overlay{
@@ -106,7 +113,6 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   z-index: 1;}
 
 .jumbotron > h1{padding-top: 35px ;font-size: 90px; text-align: center; text-transform: uppercase;}
-.jumbotron > h5{font-size: 40px;}
 
 .cover__title, .jumbotron > p{position: relative; z-index: 2;}
 
@@ -163,9 +169,11 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 	transform: scale(1.3);
 }
 
+
+
+
 /* -------------------------------------------------------------------------------- */
-/* ! About
- */
+/* ! About Section */
 /* -------------------------------------------------------------------------------- */
 .about__sidebar__text{margin: 0;}
 .about__text{font-size: 15px;}
@@ -176,42 +184,42 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   text-align: center;
  }
 
+
 /* -------------------------------------------------------------------------------- */
-/* ! Recents Works */
+/* ! Recents Works Section */
 /* -------------------------------------------------------------------------------- */
 .works__text{font-size: 15px}
 .works__title{margin: 0;}
 .work__section{padding: 0;}
 
 .works__cta{transition: .2s ease; margin-top: 15px; color: #fff;}
+
 .works__logos{display: flex; justify-content: space-around;}
 .works__logo{width: 25%; padding-top: 15px;}
+
 
 .carousel-inner > .item{margin-bottom: 15px; background-size: cover; background-position: center center;}
 .carousel-control.left,.carousel-control.right{background-image: none;}
 .glyphicon-chevron-left:before{content: "";}
 .glyphicon-chevron-right:before{content: "";}
 
+
+
+
 /* -------------------------------------------------------------------------------- */
-/* ! Skills & Tools */
+/* ! Skill Section */
 /* -------------------------------------------------------------------------------- */
 .progress__bars{margin-top: 20px;}
 .progress{border-radius: 0;}
 .progress-bar{border: 0;  background-color: red;}
-
-.progress{
-  -webkit-box-shadow: none;
-   box-shadow: none;
-  background-color: #e9ecef;
-}
-
+.progress{-webkit-box-shadow: none; box-shadow: none; background-color: #e9ecef;}
 .progress__title{font-weight: bold; font-size: 15px; padding-top: 10px;}
 
+
 /* -------------------------------------------------------------------------------- */
-/* ! Contact */
+/* ! Contact Section */
 /* -------------------------------------------------------------------------------- */
 .contact__form{margin-top: 15px; border-radius: 0;}
-
 .form-control{
   height: 45px;
   background-color: #e9ecef;
@@ -225,18 +233,15 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 .contact__point > p{margin: 10px auto;}
 .contact__button{background-color: #fff; color: #fff; transition: .2s ease;}
 .contact__divider{display: none;}
-
-.input-group > input, .input-group-addon{border: 0px; border-radius: 0px;}
-.form-control:focus{box-shadow: none;}
-
 /* -------------------------------------------------------------------------------- */
-/* ! Footer */
+/* ! Footer Section */
 /* -------------------------------------------------------------------------------- */
 .footer{
     background-color: #1A2732;
     padding: 0;
     margin-top: 15px;
     border: 4px solid;
+    border-color: red;
     border-bottom: none;
     border-left: none;
     border-right: none;
@@ -244,15 +249,27 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
     margin-bottom: 50px;
 }
 
-.footer__item{padding: 15px; color: #fff; font-weight: 400;}
+
+.footer__item {padding: 15px; color: #fff; font-weight: 400;}
 .footer__item a{text-decoration: none; transition: all .2s ease; color: #fff;}
 .footer__item a:hover{color: #ff005d; transition: all .2s ease;}
 
+
+.fa-whatsapp:hover{color: #3fca06; transition: all .2s ease;}
 .fa-facebook-square:hover{color: #00c3ef; transition: all .2s ease;}
 .fa-instagram:hover{color: #bf00ef; transition: all .2s ease;}
+.fa-euro-sign:hover{color: #109900; transition: all .2s ease;}
+
+
+
+.copyrights{
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+}
 
 /* -------------------------------------------------------------------------------- */
-/* ! Portfolio */
+/* ! Portfolio Page  */
 /* -------------------------------------------------------------------------------- */
 .portfolio__box{
   position: relative;
@@ -272,17 +289,16 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
    text-align: center;
  }
 
- .portfolio__box:hover .portfolio__overlay{opacity: 0;}
+ .portfolio__box:hover .portfolio__overlay{
+   opacity: 0;
+ }
 
-/* -------------------------------------------------------------------------------- */
-/* ! My resume */
-/* -------------------------------------------------------------------------------- */
+
+
 .my__resume{padding: 20px; color: #fff; margin-top: 15px;}
 .my__resume h2,p{margin-top: 15px;}
+.divider-inverse{margin-top: 20px; margin-bottom: 10px;}
 
-/* -------------------------------------------------------------------------------- */
-/* ! Blog */
-/* -------------------------------------------------------------------------------- */
 .search__form{
   height: 45px;
   border-radius: 0;
@@ -292,7 +308,9 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
   margin-bottom: 15px;
 }
 
-.input-group > input, .input-group-addon{background-color: e9ecef;}
+.input-group > input, .input-group-addon{
+  background-color: e9ecef;
+}
 
 .blog__title, {margin-top: 5px;}
 .article{margin-bottom: 15px;}
@@ -301,80 +319,60 @@ a:hover{text-decoration: none; color: red; transition: .2s ease;}
 .category__bar{display: flex;}
 .date{margin-top: 10px}
 .blog__divider{margin-top: 10px; margin-bottom: 10px; border: 1px solid #333; padding: 0;}
+
+
 .super__title{font-size: 45px;}
 .media-body h4{margin-top: 10px; margin-left: 10px;}
 .media-body span{margin-left: 10px;}
-
 
 /* -------------------------------------------------------------------------------- */
 /* ! Extra small devices (smartphone, fino ai 768px) */
 /* -------------------------------------------------------------------------------- */
 @media (max-width: 768px){
 
-/* -------------------------------------------------------------------------------- */
-/* ! Page Content */
-/* -------------------------------------------------------------------------------- */
-.container {padding: 0;}
-.page-body{padding: 15px;}
-.banner{margin-top: 20px;}
-.folio-body{padding-top: 0; padding-left: 15px; padding-right: 15px;}
 
 /* -------------------------------------------------------------------------------- */
-/* ! About */
+/* ! About Section */
 /* -------------------------------------------------------------------------------- */
 .about__title, .about__sidebar__title{color: #1A2732; padding-top: 10px;}
-.about__sidebar__text{text-align: center; margin: 0;}
 .about__text{text-align: justify; margin-bottom: 15px;}
+.navbar-nav{margin: 0;}
+
+.container {padding: 0;}
+
+.works__button{margin-bottom: 15px; margin-top: 15px;}
+
+.page-body{padding: 15px;}
+
+.cover__title{font-size: 50px; text-align: center; padding-top: 50px;}
+
+
+.jumbotron > p{display: none;}
+.jumbotron > h1{font-size: 50px; padding-top: 50px;}
+
 .about__image{padding-bottom: 15px;}
 
-/* -------------------------------------------------------------------------------- */
-/* ! Navbar */
-/* -------------------------------------------------------------------------------- */
-.navbar-nav{margin: 0;}
+.jumbotron{margin: 0;height: 150px; padding: 0;}
+
 .navbar-toggle{padding: 0;}
 .navbar-toggle > li{padding-left: 10px; margin-top: 1px;}
 .navbar-toggle > li > a{color: #fff;}
 .navbar-toggle > li > a:hover{color: red;}
 
-/* -------------------------------------------------------------------------------- */
-/* ! Jumbotron */
-/* -------------------------------------------------------------------------------- */
-.jumbotron > p{display: none;}
-.jumbotron > h1{font-size: 50px; padding-top: 50px;}
-.jumbotron{margin: 0;height: 150px; padding: 0;}
-.cover__title{font-size: 50px; text-align: center; padding-top: 50px;}
-
-/* -------------------------------------------------------------------------------- */
-/* ! Recents works */
-/* -------------------------------------------------------------------------------- */
-.works__button{margin-bottom: 15px; margin-top: 15px;}
+.banner{margin-top: 20px;}
 .carousel-inner > .item{margin-top: 15px;}
-.works__logo{width: 35%; padding-top: 5px; padding-bottom: 10px;}
-
-/* -------------------------------------------------------------------------------- */
-/* ! Footer */
-/* -------------------------------------------------------------------------------- */
+.about__sidebar__text{text-align: center; margin: 0;}
+.contact__title{margin-top: 15px;}
 .footer{margin-bottom: 0;}
 .footer__item{font-size: 16px; padding: 20px;}
-
- /* -------------------------------------------------------------------------------- */
- /* ! Portfolio */
- /* -------------------------------------------------------------------------------- */
- .portfolio__box{margin-top: 20px;}
- .project__title{margin-top: 5px;}
-
- /* -------------------------------------------------------------------------------- */
- /* ! Blog */
- /* -------------------------------------------------------------------------------- */
- .blog__title{margin-top: 5px;}
- .blog__text{margin-top: 5px;}
- .date{margin-top: 9px;}
-
-/* -------------------------------------------------------------------------------- */
-/* ! Contact */
-/* -------------------------------------------------------------------------------- */
-.contact__title{margin-top: 15px;}
 .contact__divider{margin-top: 20px; margin-bottom: 15px; border-top: 1px solid #eee; display: block;}
+.portfolio__box{margin-top: 20px;}
+.folio-body{padding-top: 0; padding-left: 15px; padding-right: 15px;}
+.works__logo{width: 35%; padding-top: 5px; padding-bottom: 10px;}
 
+.blog__title{margin-top: 5px;}
+.blog__text{margin-top: 5px;}
+.date{margin-top: 9px;}
+.project__title{margin-top: 5px;}
 
 }
